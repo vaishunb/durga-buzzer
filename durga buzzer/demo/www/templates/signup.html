@@ -1,0 +1,35 @@
+<ion-view view-title="Login" align-title="left">
+<ion-content>
+   
+   <!--<ion-content style="background: url(img/login.jpg) center; background-size: cover;">-->
+        <div class="hero no-header flat">
+            <div class="content">
+                <div class="app-icon"></div>
+                <h1>Durga Buzzer</h1>
+            </div>
+        </div>
+       <form ng-submit="doLogin()">
+      <div class="list">
+        <label class="item item-input">
+          <span class="input-label">Name</span>
+          <input type="text" ng-model="user.name">
+        </label>
+          <label class="item item-input">
+          <span class="input-label">Mobile Number</span>
+          <input type="number" ng-model="user.mno">
+        </label>  <label class="item item-input">
+          <span class="input-label">Age</span>
+          <input type="number" ng-model="user.age">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Email</span>
+          <input type="email" ng-model="user.email">
+        </label>
+        <label class="item">
+          <button class="button button-block button-positive" type="submit">Sign Up</button>
+        </label>
+      </div>
+    </form>
+        
+    </ion-content>
+</ion-view>
